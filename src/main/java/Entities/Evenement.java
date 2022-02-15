@@ -9,25 +9,28 @@ public class Evenement {
     private String typeEvenement;
     private String descriptionEvenement;
     private String dateEvenement;
+    private String imageEvenement;
 
     public Evenement() {
     }
 
-    public Evenement(String titreEvenement, String lieuEvenement, String typeEvenement, String descriptionEvenement, String dateEvenement) {
+    public Evenement(String titreEvenement, String lieuEvenement, String typeEvenement, String descriptionEvenement, String dateEvenement, String imageEvenement) {
         this.titreEvenement = titreEvenement;
         this.lieuEvenement = lieuEvenement;
         this.typeEvenement = typeEvenement;
         this.descriptionEvenement = descriptionEvenement;
         this.dateEvenement = dateEvenement;
+        this.imageEvenement = imageEvenement;
     }
 
-    public Evenement(int idEvenement, String titreEvenement, String lieuEvenement, String typeEvenement, String descriptionEvenement, String dateEvenement) {
+    public Evenement(int idEvenement, String titreEvenement, String lieuEvenement, String typeEvenement, String descriptionEvenement, String dateEvenement, String imageEvenement) {
         this.idEvenement = idEvenement;
         this.titreEvenement = titreEvenement;
         this.lieuEvenement = lieuEvenement;
         this.typeEvenement = typeEvenement;
         this.descriptionEvenement = descriptionEvenement;
         this.dateEvenement = dateEvenement;
+        this.imageEvenement = imageEvenement;
     }
 
     public int getIdEvenement() {
@@ -78,6 +81,14 @@ public class Evenement {
         this.dateEvenement = dateEvenement;
     }
 
+    public String getImageEvenement() {
+        return imageEvenement;
+    }
+
+    public void setImageEvenement(String imageEvenement) {
+        this.imageEvenement = imageEvenement;
+    }
+
     @Override
     public String toString() {
         return "Evenement{" +
@@ -86,7 +97,8 @@ public class Evenement {
                 ", lieuEvenement='" + lieuEvenement + '\'' +
                 ", typeEvenement='" + typeEvenement + '\'' +
                 ", descriptionEvenement='" + descriptionEvenement + '\'' +
-                ", dateEvenement=" + dateEvenement +
+                ", dateEvenement='" + dateEvenement + '\'' +
+                ", imageEvenement='" + imageEvenement + '\'' +
                 '}';
     }
 }
